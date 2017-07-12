@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <title>mladen.gibanica.net</title>
+  <!--[if lte IE 10]>
+    <div class="old-browsers">Page broken. Upgrade your browser or make a switch to something better.</div>
+  <![endif]-->
+  <!-- Define charset -->
+  <meta charset="utf-8" />
+  <!-- End Define charset -->
+  <!-- Define viewport -->
+  <meta name=viewport id="viewport" content="width=device-width, initial-scale=1">
+  <!-- Define viewport -->
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="http://mladen.gibanica.net/theme/css/favicon.ico">
+  <!-- End Favicon -->
+  <!-- Load CSS -->
+  <link rel="stylesheet" type="text/css" href="http://mladen.gibanica.net/theme/css/style.css" />
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="http://mladen.gibanica.net/theme/css/noscript_style.css" />
+  </noscript>
+  <!-- End Load CSS -->
+  <!-- Feeds -->
+  <!-- End Feeds -->
+</head>
+
+<body>
+  <div class="dummyJS">
+  <!-- Loading screen if JavaScript is enabled -->
+  <noscript>All content might not be visible. Activate JavaScript.</noscript>
+  <div id="loading">
+    <div id="icon" class="logo">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+    </div>
+  </div>
+  <!-- End Loading screen if JavaScript is enabled -->
+
+  <!-- Load and Share data -->
+  <script type="text/javascript">
+  // Pageload (avoid jQuery so it can be load after)
+  var loadingDOM = document.getElementById("loading");
+  loadingDOM.style.display = "flex";
+  // End Pageload
+
+  // Share data
+  // Define which page and set dummy
+  var whichPageActive = 0;
+
+  // Deffine pages variable
+  var pages = ['home', 'archives', 'about', 'books', 'experiments'];
+  </script>
+  <!-- End Load and Share data -->
+
+  <!-- Load jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>window.jquery || document.write('<script type="text/javascript" src="http://mladen.gibanica.net/theme/jquery/2.1.4/jquery.min.js">\x3C/script>')</script>
+  <!-- End Load jQuery -->
+  </div>
+
+  <nav id="nav" class="nav">
+    <ul>
+      <li id="menu-icon">
+        <div class="logo">
+          <div class="box1"></div>
+          <div class="boxes_123">
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+          </div>
+          <div class="box5"></div>
+        </div>
+      </li>
+          <li id="nav_home" title="home">
+            <a class="nav_home nav_link " title="home" href="http://mladen.gibanica.net/">
+              home
+            </a>
+          </li>
+          <li id="nav_archives" title="archives">
+            <a class="nav_archives nav_link " title="archives" href="http://mladen.gibanica.net/archives.html">
+              archives
+            </a>
+          </li>
+          <li id="nav_about" class="" title="about">
+            <a class="nav_about " title="about" href="http://mladen.gibanica.net/pages/about.html">
+              about
+            </a>
+          </li>
+          <li id="nav_books" class="activeMenuLi" title="books">
+            <a class="nav_books activeMenu" title="books" href="http://mladen.gibanica.net/pages/books.html">
+              books
+            </a>
+          </li>
+          <li id="nav_experiments" class="" title="experiments">
+            <a class="nav_experiments " title="experiments" href="http://mladen.gibanica.net/pages/experiments.html">
+              experiments
+            </a>
+          </li>
+    </ul>
+  </nav>
+
+  <main id="main" class="main">
+    
+
+    <div id="page_home" class="page" style="display: none">
+      <div id="content_home" class="content">
+        <script>
+          $("#content_home").load("http://mladen.gibanica.net/ #ajax_content_home");
+        </script>
+      </div>
+    </div>
+    <div id="page_archives" class="page" style="display: none">
+      <div id="content_archives" class="content">
+        <script>
+          $("#content_archives").load("http://mladen.gibanica.net/archives.html #ajax_content_archives");
+        </script>
+      </div>
+    </div>
+
+<div id="page_about" class="page" style="display: none">
+  <div id="content_about" class="content ">
+    <div id="ajax_content_about" class="ajax_content">
+      <h1 style="display: none">about</h1>
+      <div class="entry-content-page hyphenate">
+        
+  <p>This site was generated with <a href="http://getpelican.com/" target="_blank">Pelican</a>, a static-site generator powered by <a href="https://www.python.org/" target="_blank">Python</a> and is hosted on a <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi 2</a>. It also relies on the following open source projects: <a href="http://prismjs.com/" target="_blank">Prism</a>, <a href="http://leaverou.github.io/prefixfree/" target="_blank">-prefix-free</a>, <a href="http://jquery.com/" target="_blank">jQuery</a>, <a href="http://threejs.org/" target="_blank">three.js</a>, <a href="http://www.mathjax.org/" target="_blank">MathaJax</a>, <a href="https://code.google.com/p/hyphenator/" target="_blank">Hyphenator</a>, <a href="http://www.latofonts.com/" target="_blank">Lato</a> and <a href="http://www.stixfonts.org/" target="_blank"><span class="caps">STIX</span></a>.</p>
+
+  <p>Apart from extensive use of JavaScript; <span class="caps">CSS3</span> and <span class="caps">HTML5</span> is also used. The flexbox and 3D transformation properties are probably the least support in current and old browsers. Further, calc() is also used, but the support should be good enough in modern browsers. Hyphens is a <span class="caps">CSS3</span>/<span class="caps">CSS4</span> property that isn&#8217;t widely supported, and therefore a JavaScript library is used instead. If JavaScript is enabled, <span class="caps">HTML5</span> is utilised to manipulate the browser history and simulate a single page&nbsp;app.</p>
+
+  <p>This site was designed on a Mac, and primarily targets Chrome. This means that layout variations might occur across other systems. However, the site should work fine in all modern dekstop and mobile browsers; something updated in late 2014. On Windows, it has been tested without issue in Internet Explorer 10+ (although the page animation is broken until <span class="caps">IE</span> supports <code class="code_inline">transform-style: preserve-3d;</code>).</p>
+
+  <p>[2014-08-30] The low performance of <code class="code_inline">overflow: scroll;</code>, as it is implemented today (especially on mobile devices), forces me to use the default <code class="code_inline">overflow: visible;</code> property. This means that the scrollTop value is shared between all pages which in turn causes choppy animations if the current scrollTop value is higher than it can ever be on the new page. A solution would be to force the user to navigate strictly from the top, but it&#8217;s simply not an option. I&#8217;m (slowly) working on a smarter&nbsp;solution.</p>
+
+  <p>[2014-09-14] Following the general advice of coding the drop down (horizontal) menu in JavaScript instead of using the checkbox hack, a fallback had to be implemented. When users have JavaScript disabled the menu is shown as is, expanded. This can create problems on devices with smaller screens in portrait mode due to no document reflow. I am slowly looking into this. Other than that, the <code class="code_inline">:hover</code> selector is a problem on mobile devices, causing the menu icon not to transform back to the logotype when pressed to collapse the menu. It returns to its default value after the user presses anywhere else on the&nbsp;document.</p>
+
+      </div>
+
+      <!-- This is ugly but I haven't found any better way of doing things! Can use JavaScript but users witout it will lose content. -->
+
+    </div>
+  </div>
+</div>
+<div id="page_books" class="page" >
+  <div id="content_books" class="content ajaxHook">
+    <div id="ajax_content_books" class="ajax_content">
+      <h1 style="display: none">books</h1>
+      <div class="entry-content-page hyphenate">
+        
+
+  <p>Some hate on book&nbsp;binding.</p>
+
+
+      </div>
+
+      <!-- This is ugly but I haven't found any better way of doing things! Can use JavaScript but users witout it will lose content. -->
+
+      <div class="entry-content-page-title">
+        <h2>Books</h2>
+      </div>
+<ol id="post-list" class="ordered-list" data-list-length="2">
+    <li class="list-style list-style-tiles" data-list="2" data-month="11">
+      <!-- <div class="background-image-container">
+        <img class="background-image" src="http://mladen.gibanica.net/" alt="Featured Image" />
+      </div> -->
+      <a id="ahmed-a-shabana-dynamics-of-multibody-systems" href="http://mladen.gibanica.net/posts/2015/11/ahmed-a-shabana-dynamics-of-multibody-systems/" rel="bookmark" title="Permalink to Ahmed A. Shabana - Dynamics of Multibody Systems">
+        <article class="hentry">
+          <header>
+            <h3 class="entry-title">Ahmed A. Shabana - Dynamics of Multibody&nbsp;Systems</h3>
+          </header>
+        </article>
+      </a>
+      <div class="footer-box">
+        <footer>
+          <span class="published" title="2015-11-06T02:49:00+01:00">
+            06/11/15
+          </span>
+          <span class="posted_in">
+            <a href="http://mladen.gibanica.net/category/books">Books</a>
+          </span>
+        </footer>
+      </div>
+    </li>
+    <li class="list-style list-style-tiles" data-list="1" data-month="11">
+      <!-- <div class="background-image-container">
+        <img class="background-image" src="http://mladen.gibanica.net/" alt="Featured Image" />
+      </div> -->
+      <a id="d-j-ewins-modal-testing-theory-practice-and-application" href="http://mladen.gibanica.net/posts/2015/11/d-j-ewins-modal-testing-theory-practice-and-application/" rel="bookmark" title="Permalink to D. J. Ewins - Modal Testing: Theory, Practice and Application">
+        <article class="hentry">
+          <header>
+            <h3 class="entry-title"><span class="caps">D. J.</span> Ewins - Modal Testing: Theory, Practice and&nbsp;Application</h3>
+          </header>
+        </article>
+      </a>
+      <div class="footer-box">
+        <footer>
+          <span class="published" title="2015-11-06T02:49:00+01:00">
+            06/11/15
+          </span>
+          <span class="posted_in">
+            <a href="http://mladen.gibanica.net/category/books">Books</a>
+          </span>
+        </footer>
+      </div>
+    </li>
+</ol>
+    </div>
+  </div>
+</div>
+<div id="page_experiments" class="page" style="display: none">
+  <div id="content_experiments" class="content ">
+    <div id="ajax_content_experiments" class="ajax_content">
+      <h1 style="display: none">experiments</h1>
+      <div class="entry-content-page hyphenate">
+        
+  <p>Projects in all stages of developement, including abandoned, can be found here. An introduction to the project is usually placed in the first project post, if multiple posts&nbsp;exist.</p>
+
+
+      </div>
+
+      <!-- This is ugly but I haven't found any better way of doing things! Can use JavaScript but users witout it will lose content. -->
+
+      <div class="entry-content-page-title">
+        <h2>Structural Dynamics</h2>
+      </div>
+
+      <div class="entry-content-page-title">
+        <h2>Path Tracing</h2>
+      </div>
+
+      <!-- <div class="entry-content-page-title">
+        <h2>Classical Mechanics</h2>
+      </div>
+ -->
+    </div>
+  </div>
+</div>
+
+<!-- Animate to page -->
+<script>
+// Which page is this
+for (var i = 1; i <= pages.length; i++) {
+  if ( "menu_books" == "menu_" + pages[i-1]) {
+    whichPageActive = i;
+  }
+}
+</script>
+<!-- End Animate to page -->
+
+  </main>
+
+  <div class="dummyJS">
+    <!-- Load Prefixfree -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>window.prism || document.write('<script type="text/javascript" src="http://mladen.gibanica.net/theme/prefixfree/1.0.7/prefixfree.min.js">\x3C/script>')</script>
+    <!-- End Load Prefixfree -->
+    <!-- Load Prism -->
+    <script type="text/javascript" src="http://mladen.gibanica.net/theme/prism/0.0.1/prism.js"></script>
+    <script type="text/javascript">
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'http://mladen.gibanica.net/theme/prism/0.0.1/prism.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    <!-- End Load Prism -->
+    <!-- Load MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      messageStyle: "none",
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { preferredFont: "STIX-Web" }
+    });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- End Load MathJax -->
+    <!-- Load Hyphenator -->
+    <script type="text/javascript" src="http://mladen.gibanica.net/theme/hyphenator/3.3.0/hyphenator.min.js"></script>
+    <!-- End Load Hyphenator -->
+    <!-- Load three.js -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+    <script>window.processing || document.write('<script type="text/javascript" src="http://mladen.gibanica.net/theme/threejs/r68/three.min.js">\x3C/script>')</script> -->
+    <!-- End Load three.js -->
+    <!-- Load Site scripts -->
+    <script type="text/javascript" src="http://mladen.gibanica.net/theme/site_script.js"></script>
+    <script type="text/javascript" src="http://mladen.gibanica.net/theme/animation.js"></script>
+    <script type="text/javascript" src="http://mladen.gibanica.net/theme/navigation.js"></script>
+    <!-- End Load Site scripts -->
+
+    <!-- Load Graphics -->
+    <!-- <script src="http://mladen.gibanica.net/theme/graphics/graphics_01.js"></script> -->
+    <!-- End Load Graphics -->
+
+    <!-- Pageload continue and Page end -->
+    <script type="text/javascript">
+    // Page end
+    $(document).ready(function () {
+      // Initial style of the frames
+      animatePage(whichPageActive);
+
+      Prism.highlightAll();
+      MathJax.Hub.Typeset();
+      Hyphenator.run();
+    });
+    // End Page end
+
+
+
+    // Pageload continue
+    // When loaded, fade out loading div
+    $(window).load(function() {
+      $('#loading').css({
+        "opacity": 0,
+        "transform": "translateZ(0)",
+        "transition": "all " + 500 + "ms"
+      });
+
+      $("#loading").delay(500).queue( function(next){
+        $(this).css({"display": "none"});
+        next();
+      });
+    });
+    // End Pageload continue
+    </script>
+    <!-- End Pageload continue and Page end -->
+  </div>
+</body>
+</html>
